@@ -16,7 +16,11 @@ class Login extends AuthenticationEvent {
   Login({@required this.token}) : super([token]);
 
   @override
-  String toString() => 'Login { token: $token }';
+  String toString() => """{
+    "AuthenticationEvent.Login": {
+      "token": "$token"
+    }
+  }""";
 }
 
 class Logout extends AuthenticationEvent {

@@ -17,4 +17,9 @@ class LoginButtonPressed extends LoginEvent {
   }) : super([username, password]);
 }
 
-class LoggedIn extends LoginEvent {}
+class LoggedIn extends LoginEvent {
+  @override
+  String toString() => """{
+    "LoginEvent.LoggedIn": {}
+  }""";
+}
